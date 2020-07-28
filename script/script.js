@@ -13,12 +13,14 @@ $(document).ready(function () {
       $(".title").css({ "background-position": traX + "%" + traY + "%" });
     });
   }
-  class TextScramble {
+
+  class MezcladorTxt {
     constructor(el) {
       this.el = el;
       this.chars = "!<>-_\\/[]{}—=+*^?#________";
       this.update = this.update.bind(this);
     }
+    
     setText(newText) {
       const oldText = this.el.innerText;
       const length = Math.max(oldText.length, newText.length);
@@ -87,7 +89,7 @@ $(document).ready(function () {
   ];
 
   const el = document.querySelector(".textoAleatorio");
-  const fx = new TextScramble(el);
+  const fx = new MezcladorTxt(el);
 
   let counter = 0;
   const next = () => {
