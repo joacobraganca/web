@@ -1,0 +1,121 @@
+body {
+  background: white;
+}
+.main {
+  height: 100vh;
+}
+
+.containerSM i {
+  transition: transform 0.2s;
+  color: black;
+}
+
+.containerSM i:hover {
+  transform: scale(1.8);
+  /*   -moz-box-shadow: 0 0 5px #4997d0;
+    -webkit-box-shadow: 0 0 5px #4997d0;
+    box-shadow: 0px 0px 5px #4997d0;*/
+  filter: drop-shadow(0 0 0.3rem #4997d0);
+}
+
+@media (max-width: 767px) {
+  /* MOBILE */
+  .smIcon {
+    float: left;
+  }
+  .containerSM {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .justify-content {
+    text-align: center; /*bug con display flex*/
+  }
+  .hr {
+    width: 65%;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .nombre {
+    font-size: 70px;
+  }
+  .apellido {
+    font-size: 30px;
+  }
+  .textContainer {
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* DESKTOP */
+  .smIcon {
+    float: none;
+  }
+
+  .containerSM i {
+    height: 30px;
+    margin: 20px 0px 20px 0px;
+    padding-left: 10px;
+  }
+
+  .nombre {
+    font-size: 100px;
+  }
+  .apellido {
+    font-size: 43.5px;
+  }
+  .hr {
+    width: 20%;
+    margin-right: 0px;
+  }
+
+  .justify-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .textContainer {
+    padding-right: 40px;
+  }
+}
+.title {
+  background-image: url("/content/images/fondo.jpg");
+  background-position: 40% 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.naEstilo {
+  font-family: "Rubik", sans-serif;
+  color: black;
+}
+
+.nombre {
+  font-weight: 900;
+}
+
+.apellido {
+  font-weight: 300;
+}
+
+.hr {
+  height: 0.3px;
+  background-color: #4997d0;
+  border-style: none;
+}
+
+/*****************************************/
+
+.textoAleatorio {
+  font-weight: 100;
+  font-size: 20px;
+  color: black;
+}
+
+.dud {
+  color: black;
+}
